@@ -41,9 +41,21 @@ const App = (props) => { //PROPS ADDED. STATE WILL REPLACE THE JSX IN RETURN STA
 };
 
 const mapStateToProps = (state) => {
-  return (
-    console.log(state)
-  )
+  return ({
+    additionalPrice: state.additionalPrice,
+    car: {
+      price: state.car.price,
+      name: state.car.name,
+      image: state.car.image,
+      features: state.car.features
+    },
+    additionalFeatures: [
+      state.additionalFeatures[0],
+      state.additionalFeatures[1],
+      state.additionalFeatures[2],
+      state.additionalFeatures[3],
+    ]
+  })
 }
 
 export default connect (mapStateToProps, {}) (App)
