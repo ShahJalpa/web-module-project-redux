@@ -7,7 +7,7 @@ import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
-const App = (props) => {
+const App = (props) => { //PROPS ADDED. STATE WILL REPLACE THE JSX IN RETURN STATEMENT WITH PROPS.
   //THIS WHOLE STATE MOVED INTO REDUCER INDEX.JS
   /*const state = {
     additionalPrice: 0,
